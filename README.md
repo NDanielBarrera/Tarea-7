@@ -54,9 +54,7 @@ Este proyecto fue desarrollado con el objetivo de aplicar y comprender el sistem
 
 - **Clase-7/**
   - **capturas/**
-  - **public/**
   - **src/**
-    - **assets/**
     - **components/**
       - `BarraNavegacion.jsx`
       - `RutaProtegida.jsx`
@@ -84,36 +82,20 @@ Este proyecto fue desarrollado con el objetivo de aplicar y comprender el sistem
 
 # Instalación
 
-1. Clonar el repositorio:
+1. Clonar el repositorio  
+   `git clone https://github.com/NDanielBarrera/Tarea-7.git`
 
-```bash
-git clone https://github.com/NDanielBarrera/Tarea-7.git
-```
+2. Ingresar al proyecto  
+   `cd Clase-7`
 
-2. Ingresar al proyecto:
+3. Instalar dependencias  
+   `npm install`
 
-```bash
-cd Clase-7
-```
+4. Ejecutar la aplicación  
+   `npm run dev`
 
-3. Instalar dependencias:
-
-```bash
-npm install
-```
-
-4. Ejecutar la aplicación:
-
-```bash
-npm run dev
-```
-
-5. Abrir:
-
-```text
-http://localhost:5173/
-```
-
+5. Abrir  
+   `http://localhost:5173/`
 ---
 
 # Capturas de pantalla
