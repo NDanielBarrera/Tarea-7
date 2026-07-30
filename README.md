@@ -1,16 +1,229 @@
-# React + Vite
+# Enrutamiento con React Router DOM
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Proyecto desarrollado como práctica académica para la **Tarea del Módulo 2 - Unidad 3** de **Desarrollo en React JS**.
 
-Currently, two official plugins are available:
+La aplicación implementa un sistema completo de navegación utilizando **React Router DOM**, incorporando rutas públicas, dinámicas, anidadas y protegidas. Además, utiliza navegación declarativa y programática para simular el funcionamiento de un pequeño Dashboard con autenticación.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# Objetivos del proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este proyecto fue desarrollado con el objetivo de aplicar y comprender el sistema de enrutamiento dentro de React, implementando una aplicación funcional que permita:
 
-## Expanding the Oxlint configuration
+- ✅ Crear rutas públicas mediante React Router DOM.
+- ✅ Implementar navegación utilizando `Link`.
+- ✅ Navegar de forma programática mediante `useNavigate`.
+- ✅ Utilizar rutas dinámicas mediante `useParams`.
+- ✅ Leer parámetros de búsqueda utilizando `useSearchParams`.
+- ✅ Implementar rutas anidadas mediante `Outlet`.
+- ✅ Crear rutas protegidas utilizando `Navigate`.
+- ✅ Simular autenticación mediante `localStorage`.
+- ✅ Organizar la aplicación mediante componentes reutilizables.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+# Hooks utilizados
+
+| Hook | Función dentro del proyecto |
+|------|------------------------------|
+| `useNavigate` | Navegación programática entre páginas. |
+| `useParams` | Obtención de parámetros dinámicos de la URL. |
+| `useSearchParams` | Lectura y modificación de parámetros de búsqueda. |
+| `useLocation` | Obtención de la ubicación actual para controlar el acceso a rutas protegidas. |
+
+---
+
+# Funcionalidades
+
+- Navegación entre páginas mediante React Router DOM.
+- Rutas públicas.
+- Rutas dinámicas.
+- Rutas anidadas.
+- Rutas protegidas.
+- Navegación declarativa mediante `Link`.
+- Navegación programática mediante `useNavigate`.
+- Parámetros dinámicos mediante `useParams`.
+- Parámetros de búsqueda mediante `useSearchParams`.
+- Página personalizada para rutas inexistentes.
+- Simulación de inicio y cierre de sesión.
+- Diseño responsive para computadoras, tablets y teléfonos móviles.
+
+---
+
+# Estructura del proyecto
+
+- **Clase-7/**
+  - **capturas/**
+  - **public/**
+  - **src/**
+    - **assets/**
+    - **components/**
+      - `BarraNavegacion.jsx`
+      - `RutaProtegida.jsx`
+    - **layouts/**
+      - `LayoutPrincipal.jsx`
+    - **pages/**
+      - `Inicio.jsx`
+      - `Nosotros.jsx`
+      - `Contacto.jsx`
+      - `Productos.jsx`
+      - `Producto.jsx`
+      - `Dashboard.jsx`
+      - `Perfil.jsx`
+      - `Configuracion.jsx`
+      - `Login.jsx`
+      - `NoEncontrada.jsx`
+    - `App.jsx`
+    - `App.css`
+    - `main.jsx`
+  - `package.json`
+  - `vite.config.js`
+  - `README.md`
+
+---
+
+# Instalación
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/NDanielBarrera/Tarea-7.git
+```
+
+2. Ingresar al proyecto:
+
+```bash
+cd Clase-7
+```
+
+3. Instalar dependencias:
+
+```bash
+npm install
+```
+
+4. Ejecutar la aplicación:
+
+```bash
+npm run dev
+```
+
+5. Abrir:
+
+```text
+http://localhost:5173/
+```
+
+---
+
+# Capturas de pantalla
+
+## Página de inicio
+
+![Inicio](capturas/inicio.png)
+
+---
+
+## Navegación de productos
+
+![Productos](capturas/productos.png)
+
+---
+
+## Ruta dinámica
+
+![Producto](capturas/producto-dinamico.png)
+
+---
+
+## Ruta protegida
+
+![Ruta protegida](capturas/ruta-protegida.png)
+
+---
+
+## Dashboard
+
+![Dashboard](capturas/dashboard-perfil.png)
+
+---
+
+# Rutas implementadas
+
+| Ruta | Descripción |
+|------|-------------|
+| `/` | Página principal |
+| `/nosotros` | Información institucional |
+| `/contacto` | Formulario de contacto |
+| `/productos` | Listado de productos |
+| `/productos/:id` | Ruta dinámica |
+| `/login` | Simulación de autenticación |
+| `/dashboard` | Ruta protegida |
+| `/dashboard/perfil` | Ruta anidada |
+| `/dashboard/configuracion` | Ruta anidada |
+
+---
+
+# Tecnologías utilizadas
+
+- React 19
+- React Router DOM
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+---
+
+# Conceptos aplicados
+
+Durante el desarrollo fueron implementados los siguientes conceptos de React Router:
+
+- Componentes funcionales.
+- React Router DOM.
+- BrowserRouter.
+- Routes.
+- Route.
+- Link.
+- Navigate.
+- Outlet.
+- useNavigate.
+- useParams.
+- useLocation.
+- useSearchParams.
+- Rutas públicas.
+- Rutas dinámicas.
+- Rutas protegidas.
+- Rutas anidadas.
+- Navegación programática.
+- Simulación de autenticación mediante localStorage.
+- Diseño responsive.
+
+---
+
+# Autor
+
+Nombre: Néstor Daniel Barrera
+
+Curso: **Certificación Full Stack Web Development con React.js**
+
+Módulo 2 - Unidad 3
+
+Año: 2026
+
+---
+
+# Bibliografía
+
+- React Documentation. https://react.dev
+- React Router Documentation. https://reactrouter.com
+- React Router - BrowserRouter.
+- React Router - Routes.
+- React Router - Route.
+- React Router - Link.
+- React Router - Navigate.
+- React Router - useNavigate.
+- React Router - useParams.
+- React Router - useSearchParams.
+- React Router - useLocation.
+- Material de estudio UTN BA Centro de e-learning.
