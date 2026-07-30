@@ -74,6 +74,7 @@ Este proyecto fue desarrollado con el objetivo de aplicar y comprender el sistem
     - `App.jsx`
     - `App.css`
     - `main.jsx`
+  - `package-lock.json`
   - `package.json`
   - `vite.config.js`
   - `README.md`
