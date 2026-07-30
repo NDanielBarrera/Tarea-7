@@ -8,7 +8,7 @@ function Inicio() {
       <h2>Inicio</h2>
 
       <p>
-        Bienvenido al Mini Dashboard de la Tarea 7 sobre enrutamiento con
+        Bienvenido al Mini Dashboard de la Tarea 7 sobre Enrutamiento con
         React Router DOM.
       </p>
 
